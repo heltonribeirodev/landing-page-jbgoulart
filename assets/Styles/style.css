@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../fonts/clash-display-font/ClashDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../fonts/clash-display-font/ClashDisplay-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../fonts/clash-display-font/ClashDisplay-Semibold.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../fonts/clash-display-font/ClashDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+
+:root {
+    --grey: #dedede;
+    --blue: #003366;
+    --yellow: #FFD700;
+    --greystrong: #1A1A1A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--greystrong)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 100%;
+    padding: 12px 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.062);
+    z-index: 999;
+
+    img {
+        width: 6rem;
+    }
+
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 0 20px;
+        color: #ffffff;
+        outline: none;
+        font-weight: 500;
+        transition: .5s;
+    }
+
+    a:hover {
+        transform: translateY(-2px);
+        color: grey;
+    }
+
+    .visit {
+        background-color: #003366;
+        color: var(--grey);
+        border-radius: 16px;
+        text-align: center;
+        padding: 10px 25px;
+        transition: .3s;
+        font-size: 14px;
+        font-weight: 600;
+
+        text-decoration: none;
+
+        &:hover {
+            transform: translateY(-3px);
+            background-color: #dedede48;
+            color: #f1f1f1;
+        }
+    }
+}
+
+.sec1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, var(--greystrong) 100%), url(../Img/painel\ edit.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        h1 {
+            
+            font-family: 'Clash Display';
+            letter-spacing: 3px;
+            color: #ffffff;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        p {
+            color: var(--grey);
+            font-size: 1.3rem;
+        }
+    }
+
+    .heroStatus {
+        .status {
+            margin-top: 15vh;
+            color: #ffffff;
+            font-size: 2vh;
+            display: flex;
+            gap: 80px;
+            list-style: none;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.sec2 {
+    background-color: var(--greystrong);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+    .heroSec2 {
+        color: var(--grey);
+        align-items: center;
+        justify-content: center;
+
+        .hero2title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-family: 'Clash Display';
+                font-weight: 600;
+                margin: 50px;
+                color: var(--grey);
+                font-size: 3rem;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin: 10px auto;
+
+            .servi {
+                background-color: #00336633;
+                border-radius: 16px;
+                padding: 35px;
+                transition: .3s;
+
+                img {
+                    width: 50px;
+                    margin: 15px;
+                }
+
+                h4 {
+                    padding: 5px;
+                    font-size: 2vh;
+                    border-bottom: 1px solid #dedede4b;
+                }
+
+                p {
+                    padding-top: 15px;
+                    letter-spacing: 1.2px;
+                }
+            }
+
+            .servi:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    .orc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        a {
+            background-color: #00336633;
+            color: var(--grey);
+            padding: 10px 30px;
+            text-decoration: none;
+            outline: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 15px;
+            transition: .5s;
+
+            &:hover {
+                transform: scale(1.02);
+                background-color: #dedede48;
+                color: #f1f1f1;
+            }
+        }
+    }
+}
+
+.sec3 {
+    background-color: var(--greystrong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+    padding: 0px 10rem;
+
+    h2 {
+        font-family: 'Clash Display';
+        font-weight: 600;
+        color: var(--grey);
+        font-size: 3rem;
+        margin: 50px;
+        letter-spacing: 4px;
+    }
+
+    .imageTrabalho {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 45px 0px;        
+
+        img,
+        video {
+            border-radius: 15px;
+            width: 350px;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+            filter: grayscale(100%);
+            cursor: pointer;
+            width: 100%;
+
+            &:hover {
+                filter: grayscale(0%);
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+.sec4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 60px auto 0 auto;
+    height: 70vh;
+    width: 60%;
+
+    .esquerda {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+            font-family: 'Clash Display';
+            font-weight: 500;
+            color: var(--grey);
+            font-size: 3rem;
+            letter-spacing: 1.3px;
+
+            span {
+                color: var(--yellow);
+            }
+        }
+
+        img {
+            opacity: 0.8;
+            transition: 0.3s;
+            margin: 50px;
+            width: 300px;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            opacity: 1;
+        }
+    }
+
+    .direita {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            color: var(--grey);
+            letter-spacing: 1.3px;
+            padding: 50px;
+            border-left: 2px solid;
+             border-image: linear-gradient(to bottom, #ffd9006e ,rgba(0, 0, 0, 0)) 1 30%;   ;
+            font-size: 1rem;
+
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding: 15px;
+
+            li {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.sec5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 15% 40px 15%;
+    min-height: 30vh;
+    background: linear-gradient(1deg, rgba(255, 215, 0, 1) 0%, rgba(86, 75, 19, 1) 0%, rgba(26, 26, 26, 1) 84%);
+
+    .contato-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .content {
+        width: 60%;
+
+        h2 {
+            font-family: 'Clash Display';
+            font-weight: 600;
+            font-size: 4rem;
+            letter-spacing: 1.3px;
+            color: var(--grey);
+        }
+    }
+
+    .links {
+        display: flex;
+        gap: 25px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 20px;
+            background-color: #dedede11;
+            text-decoration: none;
+            color: var(--grey);
+            border-radius: 8px;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translateY(-5px);
+                background-color: #dedede59;
+            }
+        }
+
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #dedede1a;
+        padding-top: 50px;
+        gap: 30px;
+
+        p {
+            font-size: 14px;
+            color: var(--grey);
+            opacity: 0.8;
+            
+            a{
+                color: var(--grey);
+                text-decoration: none;
+                font-weight: 700;
+                transition: .5s;
+
+                &:hover {
+                    color: #f1f1f1;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

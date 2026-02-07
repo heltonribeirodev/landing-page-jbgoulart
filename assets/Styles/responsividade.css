@@ -1,0 +1,46 @@
+@media (max-width: 1980px) {
+    .sec4 {
+        .esquerda {
+            h2 {
+                font-size: 2.3rem;
+            }
+        }
+
+        .direita {
+            h3 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1650px) {
+    .sec4 {
+        .direita {
+            h3 {
+                font-size: 12px
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .sec1 .title {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .sec2 .content .servi h4 {
+        font-size: 1rem !important;
+    }
+
+    .sec2 .content .servi img {
+        width: 10px;
+    }
+
+    .sec5 {
+        padding: 40px;
+    }
+
+}
