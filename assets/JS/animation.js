@@ -39,7 +39,7 @@ gsap.registerPlugin(ScrollTrigger);
 //  Variaveis 
 const tl = gsap.timeline();
 
-tl.from("header", {
+tl.from("header, .inicio", {
     opacity:0,
     y:-20,
     duration: .4
