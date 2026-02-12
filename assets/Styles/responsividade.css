@@ -16,31 +16,352 @@
 
 @media (max-width: 1650px) {
     .sec4 {
+        width: 70%;
+
         .direita {
             h3 {
                 font-size: 12px
             }
         }
     }
+
+    .sec5 {
+        .contato-wrapper {
+            width: 100%;
+        }
+    }
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
+    .sec4 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .logo {
+        padding: 12px 5rem;
+    }
+
     .sec1 .title {
         h1 {
             font-size: 3rem;
         }
     }
 
-    .sec2 .content .servi h4 {
-        font-size: 1rem !important;
+    .sec2 {
+        padding: 0px 3rem;
+
+        .content {
+            width: 100%;
+
+            .servi h4 {
+                font-size: 15px !important;
+            }
+        }
     }
 
-    .sec2 .content .servi img {
-        width: 10px;
+    .sec3 {
+        padding: 0px 3rem;
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .sec5 {
+        .contato-wrapper {
+            .content {
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .logo {
+        padding: 12px 1rem;
+    }
+
+    .sec2 {
+        .heroSec2 {
+            .content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    .sec4 {
+        width: 100%;
     }
 
     .sec5 {
-        padding: 40px;
+        .contato-wrapper {
+            padding: 80px 40px 5px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .logo {
+        padding: 12px 0rem;
+
+        nav a {
+            font-size: 13px;
+        }
+
+        .visit {
+            font-size: 9px;
+        }
     }
 
+    .sec2 {
+        padding: 15px 1rem;
+
+        .heroSec2 {
+            .content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    .sec3 {
+        padding: 0px 1rem;
+    }
+
+    .sec4 {
+        .esquerda {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .img {
+                width: 200px;
+            }
+        }
+    }
+
+    .sec5 {
+        .contato-wrapper {
+            .content {
+                h2 {
+                    font-size: 4rem;
+                }
+            }
+
+            .links {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        padding: 12px 0rem;
+
+        nav a {
+            font-size: 12px;
+        }
+
+        .visit {
+            font-size: 9px;
+        }
+    }
+
+    .sec1 {
+        .heroStatus {
+            .status {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .sec4 {
+        display: flex;
+        flex-direction: column;
+
+        .esquerda {
+            h2 {
+                font-size: 3rem;
+            }
+            img {
+                margin: 0;
+            }
+        }
+
+        .direita {
+            h3 {
+                border: none;
+            }
+        }
+    }
+
+    .sec5 {
+        .contato-wrapper {
+            padding: 80px 15px 5px 15px;
+
+            .content {
+                h2 {
+                    font-size: 1.5rem
+                }
+            }
+
+            .links {
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .logo {
+        img {
+            width: 4rem;
+        }
+
+        nav a {
+            font-size: 10px;
+        }
+
+        .visit {
+            padding: 15px;
+            font-size: 8px;
+        }
+    }
+
+    .sec1 {
+        .title {
+            h1 {
+                font-size: 2rem;
+            }
+
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .sec2 {
+        .heroSec2 {
+            .content {
+                .servi {
+                    img {
+                        width: 30px;
+                    }
+
+                    h4 {
+                        font-size: 12px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sec4 {
+        .esquerda {
+            img {
+                margin: 0;
+            }
+        }
+
+        .direita {
+            h3 {
+                padding: 15px 50px;
+            }
+        }
+    }
+}
+
+/* MENU HAMBURGUER AQUI */
+
+@media screen and (max-width: 660px) {
+    .sec2 {
+        .heroSec2 {
+            .content {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
+    .sec5 {
+        padding: 80px 7px 5px 7px;
+
+        .contato-wrapper {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sec1 {
+        .heroStatus {
+            .status {
+                gap: 40px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .sec2 {
+        .orc {
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .sec3 {
+        .imageTrabalho {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .sec4 {
+        .direita {
+            h3 {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .sec5 {
+        .links {
+            gap: 5px;
+            a {
+                font-size: 8px;
+            }
+        }
+
+        .footer {
+            p {
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sec5 {
+        .links {
+            flex-direction: column;
+            gap: 5px;
+            a {
+                font-size: 8px;
+            }
+        }
+    }
 }
