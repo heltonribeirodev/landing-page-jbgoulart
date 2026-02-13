@@ -59,5 +59,5 @@ tl.from(splitType.chars, {
     opacity: 0,
     filter: "blur(3px)",
     stagger: 0.05,
-    duration: 0.3
+    duration: 0.1
 });
