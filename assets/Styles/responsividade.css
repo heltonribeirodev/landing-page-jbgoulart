@@ -113,13 +113,15 @@
     .logo {
         padding: 12px 0rem;
 
-        nav a {
-            font-size: 13px;
+        .nav {
+            ul {
+                a {
+                    font-size: 12px;
+                }
+            }
         }
 
-        .visit {
-            font-size: 9px;
-        }
+
     }
 
     .sec2 {
@@ -169,12 +171,10 @@
     .logo {
         padding: 12px 0rem;
 
-        nav a {
-            font-size: 12px;
-        }
-
-        .visit {
-            font-size: 9px;
+        .nav {
+            ul {
+                gap: 25px;
+            }
         }
     }
 
@@ -232,9 +232,6 @@
             width: 4rem;
         }
 
-        nav a {
-            font-size: 10px;
-        }
     }
 
     .sec1 {
@@ -285,9 +282,18 @@
     }
 }
 
-/* MENU HAMBURGUER AQUI */
-
 @media screen and (max-width: 660px) {
+    .logo {
+        .nav {
+            #menu {
+                a {
+                    font-size: 10px;
+                }
+
+            }
+        }
+    }
+
     .sec2 {
         .heroSec2 {
             .content {
@@ -306,13 +312,77 @@
     }
 }
 
+/* MENU HAMBURGUER AQUI */
+
 @media screen and (max-width:600px) {
+    .logo {
+        padding: 12px 2rem;
+
+        .btnMenu {
+            display: block;
+            background-color: transparent;
+            border: none;
+            color: #F1f1f1;
+            font-size: 22px;
+            position: absolute;
+            right: 2rem;
+            font-size: 32px;
+            z-index: 1001;
+        }
+
+        #menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            background-color: var(--greystrong);
+            height: 0;
+            z-index: 1000;
+            transition: .7s;
+            visibility: hidden;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu li a {
+            font-size: 20px;
+            padding: 1.5rem 0;
+            margin: 0;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .nav.active #menu {
+            height: 100vh;
+            visibility: visible;
+
+            li { 
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
     .sec1 {
         .heroStatus {
             .status {
-                gap: 40px;
+                gap: 20px;
                 font-size: 12px;
             }
+        }
+    }
+
+    .sec3 {
+        .imageTrabalho {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
@@ -323,12 +393,6 @@
             a {
                 font-size: 10px;
             }
-        }
-    }
-
-    .sec3 {
-        .imageTrabalho {
-            grid-template-columns: repeat(2, 1fr);
         }
     }
 
