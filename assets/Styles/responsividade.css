@@ -1,3 +1,10 @@
+:root {
+    --grey: #dedede;
+    --blue: #003366;
+    --yellow: #FFD700;
+    --greystrong: #1A1A1A;
+}
+
 @media (max-width: 1980px) {
     .sec4 {
         .esquerda {
@@ -187,6 +194,7 @@
             h2 {
                 font-size: 3rem;
             }
+
             img {
                 margin: 0;
             }
@@ -226,11 +234,6 @@
 
         nav a {
             font-size: 10px;
-        }
-
-        .visit {
-            padding: 15px;
-            font-size: 8px;
         }
     }
 
@@ -340,6 +343,7 @@
     .sec5 {
         .links {
             gap: 5px;
+
             a {
                 font-size: 8px;
             }
@@ -359,6 +363,7 @@
         .links {
             flex-direction: column;
             gap: 5px;
+
             a {
                 font-size: 8px;
             }

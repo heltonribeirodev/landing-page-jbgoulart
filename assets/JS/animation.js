@@ -55,6 +55,13 @@ tl.from(".status", {
 const textoAnimado = document.querySelectorAll(".textAnimado");
 const splitType = new SplitType(textoAnimado, { type: "chars" });
 
+tl.from(".icon", {
+    opacity: 0,
+    y: -10,
+    scale: 0.8,
+    duration: 0.1
+});
+
 tl.from(splitType.chars, {
     opacity: 0,
     filter: "blur(3px)",
