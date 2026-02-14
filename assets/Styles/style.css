@@ -397,7 +397,6 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    min-height: 30vh;
     background: linear-gradient(1deg, rgba(255, 215, 0, 1) 0%, rgba(86, 75, 19, 1) 0%, rgba(26, 26, 26, 1) 84%);
     gap: 5px;
 
