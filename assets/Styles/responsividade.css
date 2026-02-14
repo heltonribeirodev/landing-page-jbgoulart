@@ -126,12 +126,6 @@
 
     .sec2 {
         padding: 15px 1rem;
-
-        .heroSec2 {
-            .content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
     }
 
     .sec3 {
@@ -256,7 +250,7 @@
                     }
 
                     h4 {
-                        font-size: 12px;
+                        font-size: 12px;    
                     }
 
                     p {
