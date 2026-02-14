@@ -236,10 +236,22 @@ html {
                     padding-top: 15px;
                     letter-spacing: 1.2px;
                 }
-            }
 
-            .servi:hover {
-                transform: scale(1.03);
+                &:nth-child(2){
+                    transition-delay: 100ms;
+                }
+                &:nth-child(3){
+                    transition-delay: 200ms;
+                }
+                &:nth-child(4){
+                    transition-delay: 300ms;
+                }
+                &:nth-child(5){
+                    transition-delay: 400ms;
+                }
+                &:nth-child(6){
+                    transition-delay: 500ms;
+                }
             }
         }
     }
@@ -464,3 +476,20 @@ html {
         }
     }
 }
+
+/* Animations */
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 2s;
+    transform: translateX(0);
+}
+
