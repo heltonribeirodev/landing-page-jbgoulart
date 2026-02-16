@@ -46,6 +46,9 @@ tl.from(splitType.chars, {
 
 
 // SECTION ANIMATION
+const elements = document.querySelectorAll('.hidden')
+
+elements.forEach( (elements) => myObserver.observe(elements))
 
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -56,7 +59,3 @@ const myObserver = new IntersectionObserver((entries) => {
         }
     })
 })
-
-const elements = document.querySelectorAll('.hidden')
-
-elements.forEach( (elements) => myObserver.observe(elements))
