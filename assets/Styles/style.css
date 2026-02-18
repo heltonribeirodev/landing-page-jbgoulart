@@ -474,6 +474,24 @@ html {
     }
 }
 
+.btnFixedWhats {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    opacity: 0.7;
+    transition: all .6s;
+
+    img {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
 /* Animations */
 
 .hidden {
