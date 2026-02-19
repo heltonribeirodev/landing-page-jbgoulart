@@ -23,7 +23,7 @@ Projeto desenvolvido com o objetivo de praticar e aprimorar minhas habilidades e
 ## 🔗 Deploy
 
 Acesse o projeto online:
-👉 https://seu-link-aqui.com
+👉 https://landing-page-jbgoulart.vercel.app/
 
 ## 📦 Como rodar o projeto
 
