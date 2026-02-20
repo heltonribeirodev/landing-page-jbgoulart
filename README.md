@@ -3,7 +3,9 @@
 Landing page desenvolvida com foco em geração de leads qualificados e fortalecimento da presença digital do serviço oferecido, utilizando boas práticas de conversão e performance.
 
 ## 📸 Preview do Sistema
-![Preview do Projeto](jbg eletricista.png)
+<p align="center">
+  <img src="./jbg eletricista.png" width="100%" alt="Preview da Landing Page JB G Eletricista">
+</p>
 
 ## 🧠 Sobre o Projeto
 
