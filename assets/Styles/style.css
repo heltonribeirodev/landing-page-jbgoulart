@@ -150,10 +150,11 @@ html {
             text-align: center;
         }
 
-        p {
+        .textAnimado {
             color: var(--grey);
             font-size: 1.3rem;
             text-align: center;
+            font-weight: 300;
         }
     }
 
@@ -225,7 +226,7 @@ html {
                     margin: 15px;
                 }
 
-                h4 {
+                h3 {
                     padding: 5px;
                     font-size: 2vh;
                     border-bottom: 1px solid #dedede4b;
@@ -364,29 +365,37 @@ html {
         }
     }
 
-    .direita {
+.direita {
         display: flex;
-        align-items: center;
+        /* Muda a direção do flex para coluna, empilhando o P e o UL */
+        flex-direction: column; 
+        align-items: flex-start; /* Alinha o texto à esquerda */
         justify-content: center;
         width: 100%;
+        
+        /* Movemos a borda e o padding do <p> para a div pai (.direita) */
+        padding-left: 50px; 
+        border-left: 2px solid;
+        border-image: linear-gradient(to bottom, #ffd9006e, rgba(0, 0, 0, 0)) 1 30%;
 
-        h3 {
+        p {
             color: var(--grey);
             letter-spacing: 1.3px;
-            padding: 50px;
-            border-left: 2px solid;
-            border-image: linear-gradient(to bottom, #ffd9006e, rgba(0, 0, 0, 0)) 1 30%;
             font-size: 1rem;
-
             line-height: 1.7;
-            margin-bottom: 14px;
+            margin-bottom: 20px; /* Dá um respiro entre o texto e a lista */
         }
 
         ul {
-            padding: 15px;
+            /* Adiciona o margin-left para alinhar os bullets certinho */
+            margin-left: 20px; 
+            padding: 0;
 
             li {
+                color: var(--grey); /* Garante que a lista fique na mesma cor */
                 font-weight: 400;
+                line-height: 1.6;
+                margin-bottom: 10px; /* Espaço entre cada item da lista */
             }
         }
     }

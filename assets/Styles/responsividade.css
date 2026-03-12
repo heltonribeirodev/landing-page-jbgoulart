@@ -14,7 +14,7 @@
         }
 
         .direita {
-            h3 {
+            p {
                 font-size: 1rem;
             }
         }
@@ -26,7 +26,7 @@
         width: 70%;
 
         .direita {
-            h3 {
+            p {
                 font-size: 12px
             }
         }
@@ -62,7 +62,7 @@
         .content {
             width: 100%;
 
-            .servi h4 {
+            .servi h3 {
                 font-size: 15px !important;
             }
         }
@@ -195,7 +195,7 @@
         }
 
         .direita {
-            h3 {
+            p {
                 border: none;
             }
         }
@@ -235,7 +235,7 @@
             }
 
 
-            p {
+            .textAnimado {
                 font-size: 1rem;
             }
         }
@@ -249,7 +249,7 @@
                         width: 30px;
                     }
 
-                    h4 {
+                    h3 {
                         font-size: 12px;    
                     }
 
@@ -269,7 +269,7 @@
         }
 
         .direita {
-            h3 {
+            p {
                 padding: 15px 50px;
             }
         }
@@ -392,7 +392,7 @@
 
     .sec4 {
         .direita {
-            h3 {
+            p {
                 font-size: 10px;
             }
         }
