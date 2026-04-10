@@ -37,7 +37,7 @@ O objetivo é transformar visitantes em contatos diretos via WhatsApp.
 
 ## 🚀 Deploy
 
-🔗 Acesse a versão online: [https://landing-page-jbgoulart.vercel.app/](https://jbgoulart.com.br/)
+🔗 Acesse a versão online: https://jbgoulart.com.br/
 
 ## 👨‍💻 Desenvolvido por
 
