@@ -45,6 +45,6 @@ O objetivo é transformar visitantes em contatos diretos via WhatsApp.
 Fundador da **HR|DEV**  
 Desenvolvedor Web Freelancer  
 
-🌐 Portfólio: https://hr-dev-beta.vercel.app/ <br>
+🌐 Portfólio: https://hrdev.com.br <br>
 💼 LinkedIn: https://www.linkedin.com/in/devheltonribeiro/ <br>
 📧 Contato: oiheltong@gmail.com<br>
